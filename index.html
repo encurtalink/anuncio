@@ -22,14 +22,10 @@
     .ad-box {
       width: 300px;
       height: 250px;
-      background-color: #ddd;
       margin: 40px auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
-      color: #333;
-      border: 2px dashed #888;
     }
   </style>
 </head>
@@ -38,15 +34,18 @@
   <h2>Aguarde... você será redirecionado</h2>
   <div id="countdown">5</div>
 
-  <!-- Simulação de anúncio -->
+  <!-- Monetag Ad (Exemplo) -->
   <div class="ad-box">
-    [ Seu anúncio PropellerAds aqui ]
+    <script async="async" data-cfasync="false" type="text/javascript" 
+      src="https://exampledomain.com/40f3f8aaf05fddb6a71bdfdc870d541c/invoke.js">
+    </script>
+    <div id="monetag-ad"></div>
   </div>
 
   <script>
     let seconds = 5;
     const countdown = document.getElementById('countdown');
-    const finalURL = "https://youtube.com"; // Substitua pelo link final
+    const finalURL = "https://youtube.com"; // Substitua pelo link final desejado
 
     const timer = setInterval(() => {
       seconds--;
